@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div class="card">
+
+                <div id="bioback"></div> <!-- Bio background -->
+                <div id="centrobio"> <!-- container bio -->
+                    <div id="concerto">
+                        <div id="containeravatar">
+                            <div id="avatar"> <!-- img do avatar -->
+                                <img id="imgavatar" src="./assets/avatar.png" alt="Cachorro de oculos top KK">
+                            </div>
+                            <h1 id="nick">Gabryel</h1>
+                        </div>
+                    </div>
+                    <span id="discordid">SrOsaka</span>
+                    <div id="biocontainer">
+                        <p>Social links</p>
+                        <p>Vendo sites como este por R$25</p>
+                        <a href="https://srosaka.github.io/Painel-social/">Template de bio pronta</a>
+                        </div>
+                        <div id="ip">
+                            <img src="./assets/localsvg.svg" alt="Localidade">
+                            <Span>Brazil Parana</Span>
+                        </div>
+                    </div>
+                    
+                    <div id="containerprofile">
+                        <div>
+                        <div>
+                        </div>
+                        <img id="profile" src="./assets/profile.png" alt="Garoto feliz">
+                    </div>
+                    <div id="interiorprof">
+                        <span id="dcid">srosaka</span><br>
+                        <span id="desc">Um garoto feliz.</span>
+                    </div>
+                    <div id="concerto2">
+                        <a id="profiledc" href="discordapp.com/users/779572523788140555">Profile</a>
+                    </div>
+                </div>
+
+                    <div id="containermusic">
+
+                        <img id="profile" src="./assets/musicimg.png" alt="Cirque">
+
+                    <div id="interiorprof">
+                        <span id="dcid">Yun li - Quase perfeito</span>
+
+                        <div id="progresscontainer">
+                            <div class="time">
+                                <span id="current-time">0:00</span>
+                            </div>
+                            <audio id="audio-player">
+                                <source src="./assets/quaseperfeito.mp3" type="audio/mpeg">
+                            </audio>
+                            <br>
+                            <input type="range" id="progress-bar" value="0" min="0" max="100" step="0.1" onchange="seekAudio(this.value)">
+                            <span id="duration-time">0:00</span>
+
+                            <span class="play-pause-btn" id="play-pause-btn" onclick="togglePlayPause()">&#9658;</span> <!-- Ícone de Play -->
+                            
+                            <br>
+                            <input type="range" value="0" id="volume-control" min="0" max="1" step="0.01" onchange="setVolume(this.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="your-element" data-tilt></div>
+        <!-- at the end of the body -->
+
+
+        <script src="player.js"></script>
+
+        <script type="text/javascript" src="./vanilla-tilt.js"></script>
+        <script>VanillaTilt.init(document.querySelectorAll(".card"));</script> <!--animação-->
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>
